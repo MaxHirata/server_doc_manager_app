@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+
+.header {
+    height: 190px;
+    border: 3px solid rgb(255, 214, 78);
+    border-radius: 15px;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.header .logo{
+    height: 100%;
+    padding: 3px;
+    padding-left: 20px;
+}
+
+.header-text .header-title {
+    position: relative;
+    top: 30px;
+    left: 45px;
+    color: #fff;
+    font-family: monospace; 
+    font-size: 30px;
+}
+
+.header-text p{
+    position: relative;
+    font-family: monospace; 
+    color: #fff;
+    font-size: 15px;
+    left: 70px;
+}
+
+.header-text .description {
+    font-size: 25px;
+    top: 10px;
+    left: 45px;
+}
+
+/*bootstrap overright*/
+.btn-group>.btn:first-child {
+    margin-left: 3px;
+}
+
+.menu-button {
+    width: 180px;
+    margin: 5px;
+}
+
+.side-menu {
+    margin-top: 5px;
+    margin-right: 7px;
+    padding: 5px 0 5px 0;
+    border-radius: 15px;
+    border: 3px solid rgb(255, 214, 78);
+    /*height: 950px;*/
+}
+
+.search-section-container {
+    padding: 0;
+}
+
+.searchbar {
+    margin-top: 5px;
+    height: 50px;
+}
+
+.info-container {
+    
+    border: 3px solid rgb(255, 214, 78);
+    border-radius: 15px;
+    height: 900px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.info-container .display-filler {
+    background-color: transparent;
+    padding-top: 200px;
+    background-color: rgb(206, 206, 206);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+.info-container .display-filler h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.display-info {
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+/*Dropdown styles*/
+.dropdown-submenu {
+    position: relative;
+    padding: 0 10px 0 0;
+    
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+.search-results-dropdown {
+    display: none;
+
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+
+/*Example autofill search bar css*/
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial; 
+}
+
+
+.input-field {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-field[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.select-field {
+    padding: 10px;
+    font-size: 16px;
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+
+.auto-search {
+	position: relative;
+	display: inline-block;
+    padding-top: 3px;
+    border: 3px solid rgb(150, 149, 149);
+}
+
+.auto-search-items {
+	position: absolute;
+	border: 1px solid #a1a0a0;
+	border-bottom: none;
+	border-top: none;
+	z-index: 99;
+	/*position the auto-search items to be the same width as the container*/
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+
+.auto-search-items div {
+	padding: 10px;
+	cursor: pointer;
+	background-color: rgb(224, 223, 223);
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.auto-search-items div:hover {
+	background-color: #a7a7a7;
+}
+
+.auto-search-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: rgb(236, 173, 0) !important; 
+    color: #ffffff; 
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+

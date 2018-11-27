@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MIS Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--jquery library-->
+        <script src="jquery-3.3.1.min.js"></script>
+
+        <!--BootStrap 4-->
+        <link href="bootstrap-4/css/bootstrap.min.css" rel="stylesheet"> 
+       
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="particles-js" style="height: 100%; width: 100%"></div>
+    
+    <div class="container">
+        <div class="row header">
+            <img class="col-md-3 logo" src="images/stock-logo2.png" alt="">
+            <div class="col-md-9 header-text">
+                <h1 class="header-title">Server Information Directory</h1>
+                <p class="description">----------------------------------</p>
+                <p>This is a single page Web App that simply gives users access to documents that 
+                    <br> is stored in the backend. This page allows the user to performs simple search
+                    <br> functionality through the search bar or the dropdown side menu. The dropdown
+                    <br> menu is populates from the file structure of directory 
+                    <br> the documents reside in in the backend</p>
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2 side-menu">
+                <nav class="dropdown_nav nav flex-column">
+
+                    <!--
+                    
+                    <div class="nav-item">
+                            <div class="btn-group dropright">
+                                    <button type="button"
+                                            class="btn btn-secondary dropdown-toggle menu-button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="true">
+                                        Host Servers
+                                    </button>
+                                    <ul class="dropdown-menu multi-level"
+                                        role="monu"
+                                        aria-labelledby="dropdownMenu">
+    
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMSVRHOST1.pdf">VMSVRHOST1</a></li>
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMSVRHOST2.pdf">VMSVRHOST2</a></li>
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMWSHOST1.pdf">VMWSHOST1</a></li>
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMWSHOST2.pdf">VMWSHOST2</a></li>
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMWSHOST3.pdf">VMWSHOST3</a></li>
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMWSHOST4.pdf">VMWSHOST4</a></li>
+                                        <li><a class="dropdown-item" href="Document_Collection/Host_Servers/VMWSHOST5.pdf">VMWSHOST5</a></li>
+
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-item dropdown-submenu">
+                                            <a tabindex="-1" href="#">Hover Over Me For More Options</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" tabindex="-1" href="#">Second Level</a></li>
+                                                <li><a class="dropdown-item" tabindex="-1" href="#">Second Level</a></li>
+                                                <li><a class="dropdown-item" tabindex="-1" href="#">Second Level</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    -->
+                </nav>
+            </div>
+            
+            <div class="col-md-10 row searchbar" style="padding: 0; margin-left:0">
+
+                <!--
+                <div class="col-md-12 search-section-container" >
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="auto-search" style="width:90%;">
+                        <input class="input-field" id="search-input" type="text" name="serverDoc" placeholder="Search for Document">
+                        </div>
+                        <input class="select-field" type="submit">
+                    </form>
+                </div>
+                -->
+        
+                <div class="col-md-12 search-section-container" >
+                        <div class="auto-search" style="width:100%;">
+                        <input class="input-field" id="search-input" type="text" name="serverDoc" placeholder="Search for Document">
+                        </div>
+                </div>
+
+                <div class="col-md-12 info-container">
+                    <div class="display-filler">
+                        <h1>Server </h1>
+                        <h1>Documentation</h1>
+                    </div>
+                    <div class="display-info">
+                        <!--<embed src="Document_Collection/Host_Servers/VMSVRHOST2.pdf" type="application/pdf" style="width: 100%; height: 100%;">-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <!--particles.js scripts -->
+    <script src="particles/particles.js"></script>
+    <script src="particles/app.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Bootstrap 4 js package. This package also contains popper.min.js code package-->   
+    <script src="bootstrap-4/js/bootstrap.bundle.js"></script> 
+    <!--<script src="bootstrap-4/js/bootstrap.min.js"></script> -->
+
+    <script src="main.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
